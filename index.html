@@ -9,15 +9,21 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <!-- cabecera -->
     <header class="cabecera">
         <h1><a href="">Gourment au Catering</a></h1>
     </header>
+
+    <!-- contenedor principal -->
     <main id="main" class="container-main">
+        <!-- banner del sitio -->
         <figure class="img-banner">
             <img src="https://www.w3schools.com/w3images/hamburger.jpg" alt="Banner de catering">
             <h1>Le Catering</h1>
         </figure>
-        <div class="container-about">
+
+        <!-- container ABOUT -->
+        <div id="about" class="container-about">
             <h2>About Catering</h2>>
             <h3>Tradition since 1889</h3>
             <div class="about-description">
@@ -29,7 +35,65 @@
                 </p>
             </div>
         </div>
+
+        <!-- container MENU -->
+        <div id="menu" class="container-menu">
+            <h2>Our Menu</h2>
+            <div class="container-food-cards">
+                <article class="food-card">
+                    <h3>Bread Basket</h3>
+                    <p>Assortment of fresh baked fruit breads and muffins <mark class="price">5.50</mark></p>
+                </article>
+                <article class="food-card">
+                    <h3>Honey Almond Granola with Fruits</h3>
+                    <p>Natural cereal of honey toasted oats, raisins, almonds and dates <mark class="price">7.00</mark></p>
+                </article>
+                <article class="food-card">
+                    <h3>Belgian Waffle</h3>
+                    <p>Vanilla flavored batter with malted flour <mark class="price">7.50</mark></p>
+                </article>
+                <article class="food-card">
+                    <h3>Scrambled eggs</h3>
+                    <p>Scrambled eggs, roasted red pepper and garlic, with green onions <mark class="price">7.50</mark></p>
+                </article>
+                <article class="food-card">
+                    <h3>Blueberry Pancakes</h3>
+                    <p>With syrup, butter and lots of berries<mark class="price">8.50</mark></p>
+                </article>
+            </div>
+            <figure class="img-food">
+                <img src="https://www.w3schools.com/w3images/tablesetting.jpg" alt="imagen de presentacion de platos">
+            </figure>
+        </div>
+
+        <!-- container CONTACT -->
+        <div id="contact" class="container-contact">
+            <h3>Contact</h3>
+            <article class="contact-information">
+                <p>
+                    We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.
+                </p>
+                <address>
+                    Catering Service, 42nd Living St, 43043 New York, NY
+                    <br>
+                    You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:
+                </address>
+                <div class="container-form">
+                    <form action="validar.php" class="form-delivery">
+                        <input name="client-name" type="text" placeholder="Name">
+                        <input name="client-number-order" type="number">
+                        <input name="client-date" type="text" placeholder="Date and  Time">
+                        <textarea name="client-message" id="" cols="30" rows="10" placeholder="Message \ Special requirements"></textarea>
+                        <input name="send-order" type="submit" value="Send Message">
+                    </form>
+                </div>
+            </article>
+        </div>
     </main>
-    <footer class="footer"></footer>
+
+    <!-- pie de la pagina web -->
+    <footer class="footer">
+        <small>Powered by <em><a href="https://www.w3schools.com/">W3.css</a></em></small>
+    </footer>
 </body>
 </html>
