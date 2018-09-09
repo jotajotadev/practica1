@@ -1,0 +1,38 @@
+.img-banner {
+    background-color: teal;
+    margin: 0;
+    height: 250px;
+    position: relative;
+    img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        height: 250px;
+    }
+    h1 {
+        color: var(--text-color-banner);
+        font-weight: 100;
+        position: absolute;
+        font-size: 2.2em; 
+        bottom: 0;
+        margin-left: 1.5rem;
+        word-spacing: .5rem;
+        letter-spacing: 4px;
+    }
+}
+/* Media query de prueba */
+
+/* @media screen and (min-width: 500px) {
+    .img-banner {
+        background-color: teal;
+        height: auto;
+        img {
+            height: auto;
+        }
+        h1 {
+            background-color: teal;
+            font-size: 1em;
+        }
+    }
+} */
+

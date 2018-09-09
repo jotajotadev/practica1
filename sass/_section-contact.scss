@@ -1,0 +1,53 @@
+.container-contact {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: var(--padding-content);
+    padding-right: var(--padding-content);
+    h3{
+        font-size: var(--size-title);
+        font-weight: 100;
+        letter-spacing: 4px;
+    }
+    .contact-information {
+        padding-top: 1rem;
+        font-size: .95rem;
+        p, address {
+            line-height: 1.4em;
+        }
+        address {
+            font-style: normal;
+            strong {
+                color: var(--color-secundary);
+                font-size: 1.1rem;
+                display: inline-block;
+                padding-bottom: 1em;
+            }
+        }
+        .container-form {
+            .form-delivery{
+                textarea, input:not([type="submit"]) {
+                    display: block;
+                    width: 100%;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    border: 0;
+                    outline: none;
+                    border-bottom: 1px solid var(--box-shadow-color);
+                    margin-top: 1rem;
+                }
+                textarea {
+                    border: 1px solid var(--box-shadow-color);
+                    resize: none;
+                }
+                input[type="submit"] {
+                    display: inline-block;
+                    padding: .5rem 1.2rem;
+                    margin-top: 2rem;
+                    background-color: var(--bk-hover);
+                    border: 0; 
+                }
+            }
+
+        }
+    }
+}

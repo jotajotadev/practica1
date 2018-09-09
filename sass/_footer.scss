@@ -1,0 +1,17 @@
+.footer {
+    background-color: var(--bk-footer);
+    padding: 2.5em;
+    text-align: center;
+    p {
+        small {
+            font-size: .9rem;
+            em {
+                font-style: normal;
+                a {
+                    color: inherit;
+                }
+
+            }
+        }
+    }
+}

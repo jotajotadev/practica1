@@ -1,0 +1,190 @@
+:root {
+  --box-shadow-color: #D1D1D1;
+  --bk-footer: #F1F1F1;
+  --color-secundary: #757575;
+  --text-color-banner: #58595D;
+  --bk-hover: #cccccc; }
+
+:root {
+  --size-title: 2.2rem;
+  --size-paragraph: 1.1rem;
+  /* other variables */
+  --padding-content: 1.5rem; }
+
+.header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 54px;
+  box-sizing: border-box;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2px 10px -1px var(--box-shadow-color); }
+  .header h1 {
+    margin: 0;
+    font-size: 1rem; }
+    .header h1 a {
+      text-decoration-line: none;
+      color: #000;
+      font-weight: 500;
+      word-spacing: .5rem;
+      letter-spacing: 3px; }
+
+.container-main {
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.img-banner {
+  background-color: teal;
+  margin: 0;
+  height: 250px;
+  position: relative; }
+  .img-banner img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: 250px; }
+  .img-banner h1 {
+    color: var(--text-color-banner);
+    font-weight: 100;
+    position: absolute;
+    font-size: 2.2em;
+    bottom: 0;
+    margin-left: 1.5rem;
+    word-spacing: .5rem;
+    letter-spacing: 4px; }
+
+/* Media query de prueba */
+/* @media screen and (min-width: 500px) {
+    .img-banner {
+        background-color: teal;
+        height: auto;
+        img {
+            height: auto;
+        }
+        h1 {
+            background-color: teal;
+            font-size: 1em;
+        }
+    }
+} */
+.container-about {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  /* estilos parrafos about */ }
+  .container-about h2, .container-about h3 {
+    text-align: center;
+    word-spacing: .6rem;
+    letter-spacing: 4px;
+    font-weight: 520; }
+  .container-about h2 {
+    font-size: var(--size-title); }
+  .container-about h3 {
+    margin-top: 0; }
+  .container-about .about-description {
+    font-weight: 100;
+    font-size: var(--size-paragraph);
+    padding-left: var(--padding-content);
+    padding-right: var(--padding-content);
+    line-height: 1.5em; }
+    .container-about .about-description p:last-child {
+      color: var(--color-secundary); }
+    .container-about .about-description strong {
+      background: var(--bk-hover);
+      padding: .2rem .5rem; }
+
+.container-menu {
+  padding-top: 64px;
+  padding-bottom: 64px; }
+  .container-menu h2 {
+    text-align: center;
+    font-weight: 100;
+    font-size: var(--size-title); }
+  .container-menu p {
+    font-size: var(--size-paragraph); }
+  .container-menu .container-food-cards {
+    padding-left: var(--padding-content);
+    padding-right: var(--padding-content);
+    /* cards */ }
+    .container-menu .container-food-cards .food-card {
+      margin-top: 4rem;
+      /* maybe use last-of-type but ... */ }
+      .container-menu .container-food-cards .food-card:last-child {
+        margin-bottom: 3rem; }
+      .container-menu .container-food-cards .food-card h3 {
+        font-size: 1.25rem;
+        font-weight: 100;
+        word-spacing: .5rem;
+        letter-spacing: 3px; }
+      .container-menu .container-food-cards .food-card p {
+        font-weight: 100;
+        font-size: .9rem;
+        color: var(--color-secundary); }
+        .container-menu .container-food-cards .food-card p mark {
+          background-color: transparent; }
+  .container-menu .img-food {
+    padding-left: var(--padding-content);
+    padding-right: var(--padding-content);
+    margin: 0;
+    opacity: .7; }
+    .container-menu .img-food img {
+      width: 100%; }
+
+.container-contact {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  padding-left: var(--padding-content);
+  padding-right: var(--padding-content); }
+  .container-contact h3 {
+    font-size: var(--size-title);
+    font-weight: 100;
+    letter-spacing: 4px; }
+  .container-contact .contact-information {
+    padding-top: 1rem;
+    font-size: .95rem; }
+    .container-contact .contact-information p, .container-contact .contact-information address {
+      line-height: 1.4em; }
+    .container-contact .contact-information address {
+      font-style: normal; }
+      .container-contact .contact-information address strong {
+        color: var(--color-secundary);
+        font-size: 1.1rem;
+        display: inline-block;
+        padding-bottom: 1em; }
+    .container-contact .contact-information .container-form .form-delivery textarea, .container-contact .contact-information .container-form .form-delivery input:not([type="submit"]) {
+      display: block;
+      width: 100%;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border: 0;
+      outline: none;
+      border-bottom: 1px solid var(--box-shadow-color);
+      margin-top: 1rem; }
+    .container-contact .contact-information .container-form .form-delivery textarea {
+      border: 1px solid var(--box-shadow-color);
+      resize: none; }
+    .container-contact .contact-information .container-form .form-delivery input[type="submit"] {
+      display: inline-block;
+      padding: .5rem 1.2rem;
+      margin-top: 2rem;
+      background-color: var(--bk-hover);
+      border: 0; }
+
+.footer {
+  background-color: var(--bk-footer);
+  padding: 2.5em;
+  text-align: center; }
+  .footer p small {
+    font-size: .9rem; }
+    .footer p small em {
+      font-style: normal; }
+      .footer p small em a {
+        color: inherit; }
+
+/*# sourceMappingURL=main.css.map */

@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gouermet</title>
     <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <!-- cabecera -->
-    <header class="cabecera">
+    <header class="header">
         <h1><a href="">Gourment au Catering</a></h1>
     </header>
 
@@ -74,16 +75,16 @@
                     We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.
                 </p>
                 <address>
-                    Catering Service, 42nd Living St, 43043 New York, NY
+                    <strong>Catering Service, 42nd Living St, 43043 New York, NY</strong>
                     <br>
                     You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:
                 </address>
                 <div class="container-form">
-                    <form action="validar.php" class="form-delivery">
-                        <input name="client-name" type="text" placeholder="Name">
-                        <input name="client-number-order" type="number">
-                        <input name="client-date" type="text" placeholder="Date and  Time">
-                        <textarea name="client-message" id="" cols="30" rows="10" placeholder="Message \ Special requirements"></textarea>
+                    <form class="form-delivery">
+                        <input required name="client-name" type="text" placeholder="Name">
+                        <input required name="client-number-order" type="number" placeholder="How many people">
+                        <input required name="client-date" type="text" placeholder="Date and  Time">
+                        <textarea required name="client-message" id="" cols="30" rows="10" placeholder="Message \ Special requirements"></textarea>
                         <input name="send-order" type="submit" value="Send Message">
                     </form>
                 </div>
@@ -93,7 +94,7 @@
 
     <!-- pie de la pagina web -->
     <footer class="footer">
-        <small>Powered by <em><a href="https://www.w3schools.com/">W3.css</a></em></small>
+        <p><small>Powered by <em><a href="https://www.w3schools.com/">w3.css</a></em></small></p>
     </footer>
 </body>
 </html>
