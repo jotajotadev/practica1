@@ -34,6 +34,9 @@
       font-weight: 500;
       word-spacing: .5rem;
       letter-spacing: 3px; }
+  .header .navigation {
+    /* disable this widht media screen min-width 600px */
+    display: none; }
 
 .container-main {
   max-width: 1800px;
@@ -60,20 +63,6 @@
     word-spacing: .5rem;
     letter-spacing: 4px; }
 
-/* Media query de prueba */
-/* @media screen and (min-width: 500px) {
-    .img-banner {
-        background-color: teal;
-        height: auto;
-        img {
-            height: auto;
-        }
-        h1 {
-            background-color: teal;
-            font-size: 1em;
-        }
-    }
-} */
 .container-about {
   padding-top: 64px;
   padding-bottom: 64px;
@@ -98,6 +87,9 @@
     .container-about .about-description strong {
       background: var(--bk-hover);
       padding: .2rem .5rem; }
+  .container-about figure {
+    margin: 0;
+    display: none; }
 
 .container-menu {
   padding-top: 64px;
@@ -186,5 +178,50 @@
       font-style: normal; }
       .footer p small em a {
         color: inherit; }
+
+/* Responsive aplicato to ima from BANNER------- */
+@media screen and (min-width: 500px) {
+  .img-banner {
+    height: auto; }
+    .img-banner img {
+      height: auto; } }
+/* Responsive Header in min-width 600px */
+@media screen and (min-width: 600px) {
+  .header {
+    display: flex;
+    justify-content: space-between; }
+    .header .navigation {
+      display: block; }
+      .header .navigation a {
+        color: black;
+        padding: .5rem .7rem;
+        text-decoration-line: none;
+        letter-spacing: 3px; } }
+/* Responsive to container ABOUT using grid */
+@media screen and (min-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(min-content, 550px)) 1fr; }
+    .grid .grid-item-left {
+      display: inline-block;
+      padding-left: var(--padding-content);
+      padding-right: var(--padding-content);
+      grid-column: 2 / 3; }
+      .grid .grid-item-left img {
+        width: 100%;
+        opacity: .7; }
+    .grid .grid-item-right .about-description p:last-child {
+      display: none; } }
+/* Responsive mostra parrafo de container ABOUT ---         ^esto es importante */
+@media screen and (min-width: 990px) {
+  .container-about .grid-item-right .about-description p:last-child {
+    display: block; } }
+/* responsive to Container MENU with grid */
+@media screen and (min-width: 990px) {
+  .container-menu {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(min-content, 550px)) 1fr; }
+    .container-menu .item-1 {
+      grid-column: 2 / 3; } }
 
 /*# sourceMappingURL=main.css.map */

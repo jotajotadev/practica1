@@ -1,0 +1,75 @@
+/* Responsive aplicato to ima from BANNER------- */
+@media screen and (min-width: 500px) {
+    .img-banner {
+        height: auto;
+        img {
+            height: auto;
+        }
+    }
+}
+
+ /* Responsive Header in min-width 600px */
+@media screen and (min-width: 600px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        .navigation {
+            display: block;
+            a {
+                color: black;
+                padding: .5rem .7rem;
+                text-decoration-line: none;
+                letter-spacing: 3px;
+            }
+        }
+    }
+}
+
+/* Responsive to container ABOUT using grid */
+@media screen and (min-width: 600px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(min-content, 550px)) 1fr;
+        .grid-item-left {
+            display: inline-block;
+            padding-left: var(--padding-content);
+            padding-right: var(--padding-content);
+            img {
+                width: 100%;
+                opacity: .7;
+            }
+            grid-column:  2 / 3;
+        }
+        .grid-item-right {
+            .about-description {
+                & p:last-child {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+/* Responsive mostra parrafo de container ABOUT ---         ^esto es importante */
+@media screen and (min-width: 990px) {
+    .container-about {
+        .grid-item-right {
+            .about-description {
+                & p:last-child {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+/* responsive to Container MENU with grid */
+@media screen and (min-width: 990px) {
+    .container-menu {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(min-content, 550px)) 1fr;
+        .item-1 {
+            grid-column: 2 / 3;
+        }
+    }
+}
